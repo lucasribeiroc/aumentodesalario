@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Planos de trabalho</title>
+    </head>
+    <body>
+        <script>
+            var salario = prompt("Digite seu salário");
+            var planoTrabalho = prompt("Digite o plano de trabalho que você faz parte: a, b ou c");
+            var planoA = 10;
+            var planoB = 15;
+            var planoC = 20;
+            var salarioComAumento;
+            switch (planoTrabalho) {
+                case 'a' : salarioComAumento = parseFloat(salario) + parseFloat((salario * planoA) / 100);
+                break;
+                case 'b' : salarioComAumento = parseFloat(salario) + parseFloat((salario * planoB) / 100);
+                break;
+                case 'c' : salarioComAumento = parseFloat(salario) + parseFloat((salario * planoC) / 100);
+                break;
+                default : alert("Valor inválido! Digite a, b ou c!");
+                break;
+            }
+
+            alert("Seu salário com o aumento vai ficar: R$ " +salarioComAumento);
+        </script>
+    </body>
+</html>
